@@ -1,0 +1,23 @@
+TYPE
+spatial_ecology
+
+METHOD
+runge_kutta_4th
+
+DIMENSION
+10
+
+INTERVAL
+0 10000	
+
+STEP
+20000			
+
+OTHER
+XSIZE 102
+YSIZE 102	
+DIFFUSION_RATE 0.1			
+RANDOM_SEED 7321777		
+INTERACTION_MATRIX block_hypercycle 0.3		
+		
+	

@@ -1,0 +1,23 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT(src/main.c)
+
+AM_INIT_AUTOMAKE(dynamis, 1.0) 
+
+dnl Checks for programs.
+AC_PROG_CC
+
+dnl Checks for libraries.
+
+dnl Checks for header files.
+AC_HEADER_STDC
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+
+dnl Checks for library functions.
+AC_CHECK_HEADER(png.h)
+AC_CHECK_LIB(png, png_write_png)
+
+
+AC_PROG_RANLIB
+
+AC_OUTPUT(Makefile src/Makefile)

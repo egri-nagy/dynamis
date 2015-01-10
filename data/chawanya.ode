@@ -1,0 +1,26 @@
+TYPE
+replicator
+
+METHOD
+runge_kutta_4th
+
+DIMENSION
+5
+
+INTERVAL
+0 100	
+
+STEP
+10000		
+
+INITIAL
+0.11 0.19 0.15 0.25 0.3
+
+OTHER
+DUMP full
+INTERACTION_MATRIX custom
+0    -0.4  1    1.5     0.2 
+0.6   0   -.5 -0.2  -0.2
+-0.4  1    0   -0.8  -0.1
+-0.1 -0.3  1.5  0    -0.1
+0.3  -0.1 -0.6 0.2  0.01

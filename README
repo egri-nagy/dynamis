@@ -1,0 +1,8 @@
+DYNAMIS - tools for studying complex dynamical systems
+
+Dynamical systems implemented in Dynamis:
+
+- the replicator equation
+- spatial - cellular automaton like - version of replicator equation
+- speciation model
+- an ecology model

@@ -1,0 +1,21 @@
+TYPE
+speciation
+
+METHOD
+runge_kutta_4th
+
+DIMENSION
+5
+
+INTERVAL
+0 100	
+
+STEP
+2000			
+
+INITIAL
+0.2 0.2 0.2 0.2 0.2
+
+OTHER
+.002 .1
+39752387

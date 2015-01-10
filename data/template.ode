@@ -1,0 +1,20 @@
+TYPE
+<type of the system>
+
+METHOD
+<method of numerical integration>
+
+DIMENSION
+<the dimensionality of the system, integer>
+
+INTERVAL
+<start, number>  <end, number>
+
+STEP
+<number of steps, integer>
+
+INITIAL //this field is optional!!!
+<numbers indicating the initial values, must be exactly DIMENSION values>
+
+OTHER
+<any kind of data which is recognizable by the chosen system's initializator>

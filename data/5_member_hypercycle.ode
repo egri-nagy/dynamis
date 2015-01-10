@@ -1,0 +1,24 @@
+TYPE
+replicator
+
+METHOD
+runge_kutta_4th
+
+DIMENSION
+5
+
+INTERVAL
+0 100
+
+STEP
+1000			
+
+INITIAL
+0.2 0.2 0.2 0.1 0.3
+
+OTHER
+0 0 0 0 1 
+1 0 0 0 0
+0 1 0 0 0
+0 0 1 0 0
+0 0 0 1 0

@@ -1,0 +1,25 @@
+TYPE
+ecology
+
+METHOD
+runge_kutta_4th
+
+DIMENSION
+10	
+
+INTERVAL
+0 4000
+
+STEP
+2000
+
+
+OTHER
+CARRYING_CAPACITY 4
+DUMP full
+INTERACTION_MATRIX uniform_random 10	
+-.1    -0.4  .9    0.2     -0.2 
+0.6   -.1225   -.5 -0.2  0.2
+-0.4  1    -.1   -0.527  0.1	
+-0.1 -0.3  1.55  -.1    -0.1
+0.5  -0.1 -0.1 -0.1  -0.1
