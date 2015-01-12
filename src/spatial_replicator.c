@@ -47,8 +47,9 @@ png_byte palette[30] = {123,144,118,
 			162,93,81,
 			162,75,60,
 			162,50,30};
+*/
+			//kek-sarga
 
-kek-sarga
 png_byte palette[30] = {253,67,25,
 			252,98,21,
 			252,155,10,
@@ -60,8 +61,8 @@ png_byte palette[30] = {253,67,25,
 			23,84,252,
 			23,27,252};
 
-*/
 
+/*
 png_byte palette[96] = {
   2,2,41,
   0,0,84,
@@ -95,7 +96,7 @@ png_byte palette[96] = {
   255,0,0,
   255,0,4,
   255,0,30
-};
+};*/
 /*
   png_byte palette[57] = {
   255,255,255,
@@ -190,14 +191,16 @@ void spat_modify(void *o_s){
   location *loc = (location*) os->data;  
   //the neighbour values are gathered in the next vector 
   for ( k = 0; k < dim; k++){
-    os->nextstate[k] += ((rand() / (double) RAND_MAX) * diffusion_rate * (lattice[(loc->x)-1][loc->y]->state[k]
-					     + lattice[(loc->x)+1][loc->y]->state[k]
-					     + lattice[(loc->x)][(loc->y)-1]->state[k]
-					     + lattice[(loc->x)][(loc->y)+1]->state[k]));
-   os->nextstate[k] += ((rand() / (double) RAND_MAX) * diffusion_rate * (lattice[(loc->x)-1][(loc->y)-1]->state[k]
-					     + lattice[(loc->x)-1][(loc->y)+1]->state[k]
-					     + lattice[(loc->x)+1][(loc->y)-1]->state[k]
-					     + lattice[(loc->x)+1][(loc->y)+1]->state[k]));
+    os->nextstate[k] += ((rand() / (double) RAND_MAX) * diffusion_rate * 
+			 (lattice[(loc->x)-1][loc->y]->state[k]
+			  + lattice[(loc->x)+1][loc->y]->state[k]
+			  + lattice[(loc->x)][(loc->y)-1]->state[k]
+			  + lattice[(loc->x)][(loc->y)+1]->state[k]));
+   os->nextstate[k] += ((rand() / (double) RAND_MAX) * diffusion_rate * 
+			(lattice[(loc->x)-1][(loc->y)-1]->state[k]
+			 + lattice[(loc->x)-1][(loc->y)+1]->state[k]
+			 + lattice[(loc->x)+1][(loc->y)-1]->state[k]
+			 + lattice[(loc->x)+1][(loc->y)+1]->state[k]));
   }
   //the last cell fires the whole update process 
  if (loc->x == xsize-2 && loc->y == ysize-2){

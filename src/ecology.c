@@ -20,6 +20,7 @@ void ecology_full_dump(FILE *out,double time, void *o_s);
 void ecology_dump(FILE *out,double time, void *o_s);
 
 void createEcologyODE(ode_set *des,FILE *in){
+  printf("#Creating Ecology ODE \n");
   dim = des->N;
   des->functions = &ecology;
   ecology_initialization(des,in);
