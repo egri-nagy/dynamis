@@ -5,22 +5,17 @@ METHOD
 runge_kutta_4th
 
 DIMENSION
-20
+10
 
 INTERVAL
-0 10000	
+0 2000	
 
 STEP
-20000			
+2000			
 
 OTHER
-LATTICE_SIZE 100 100	
-DIFFUSION_RATE 0.1			
-RANDOM_SEED 19616			
-DUMP density 98 98 0
-INTERACTION_MATRIX hypercycle
--.1    -0.4  .9    0.2     -0.2 
-0.6   -.1225   -.5 -0.2  0.2
--0.4  1    -.1   -0.527  0.1
--0.1 -0.3  1.5  -.1    -0.1
-0.5  -0.1 -0.1 -0.1  -0.1
+LATTICE_SIZE 162 92	
+DIFFUSION_RATE 0.01			
+RANDOM_SEED 1616			
+DUMP dominant 98 98 0
+INTERACTION_MATRIX hypercycle 1		

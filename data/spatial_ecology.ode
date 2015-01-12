@@ -1,5 +1,5 @@
 TYPE
-spatial_ecology
+spatial_replicator
 
 METHOD
 runge_kutta_4th
